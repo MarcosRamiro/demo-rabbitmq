@@ -9,8 +9,8 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_USER: user
-      MYSQL_PASSWORD: pass
+      MYSQL_USER: spring_user
+      MYSQL_PASSWORD: spring_pass
       MYSQL_ROOT_PASSWORD: my_secret
       MYSQL_DATABASE: db_test
     volumes:
