@@ -19,6 +19,15 @@ services:
     ports:
       - "3306:3306"
 
+  rabbitmq:
+    image: rabbitmq:3-management
+    environment:
+      RABBITMQ_DEFAULT_USER: spring_mq_user
+      RABBITMQ_DEFAULT_PASS: spring_mq_pass
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
 
 volumes:
   db:
