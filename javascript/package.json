@@ -1,0 +1,17 @@
+{
+  "name": "demo-amqp-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "worker": "node worker.js",
+    "email": "node send_mail.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  },
+  "type": "module"
+}

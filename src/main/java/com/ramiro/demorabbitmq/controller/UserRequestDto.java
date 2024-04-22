@@ -1,2 +1,2 @@
 package com.ramiro.demorabbitmq.controller;
-public record UserRequestDto(String name, String email){}
+public record UserRequestDto (String name, String email){}
