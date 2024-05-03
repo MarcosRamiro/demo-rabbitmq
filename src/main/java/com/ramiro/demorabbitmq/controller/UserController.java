@@ -28,7 +28,7 @@ public class UserController {
         user.setName(request.name());
         user.setEmail(request.email());
         //userRepository.save(user);
-        rabbitTemplate.convertAndSend("w/userne" , UserSendToMQDto.from(request));
+        rabbitTemplate.convertAndSend("new/user" , UserSendToMQDto.from(request));
         return ResponseEntity.ok(UserResponseDto.from(user));
     }
 

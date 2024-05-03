@@ -3,7 +3,7 @@ from server_mq import create_connection
 connection = create_connection()
 
 channel = connection.channel()
-result = channel.queue_declare(queue='email.v1.sendemail', exclusive=False, durable=True)
+result = channel.queue_declare(queue='payment.v1.process', exclusive=False, durable=True)
 queue_name = result.method.queue
 
 print(' [*] Waiting for logs. To exit press CTRL+C')
